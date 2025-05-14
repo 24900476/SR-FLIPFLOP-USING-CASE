@@ -1,7 +1,6 @@
 # SR-FLIPFLOP-USING-CASE
 # NAME : KABIRA A
 # REG NO: 212224040146
-
 **AIM:**
 
 To implement  SR flipflop using verilog and validating their functionality using their functional tables
@@ -35,25 +34,49 @@ By using three variable K-Map, we can get the simplified expression for next sta
 The maximum possible groupings of adjacent ones are already shown in the figure. Therefore, the simplified expression for next state Qt+1t+1 is Q(t+1)=S+R′Q(t)Q(t+1)=S+R′Q(t)
 
 **Procedure**
-1.	Type the program in Quartus software.
-2.	Compile and run the program.
-3.	Generate the RTL schematic and save the logic diagram.
-4.	Create nodes for inputs and outputs to generate the timing diagram.
-5.	For different input combinations generate the timing diagram.
 
+1.Type the program in Quartus software.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram.
 
 **PROGRAM**
 
-![image](https://github.com/user-attachments/assets/e0048324-c466-4d1f-b170-475b5cd74b68)
+```
+module exp6(S,R,clk,Q,Qbar);
+input S,R,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+Q=S|((~R)&Q);
+Qbar=~Q;
+end
+endmodule
+```
 
-Developed by:Priyadharshini.R
-RegisterNumber:24900285
+/* Program for flipflops and verify its truth table in quartus using Verilog programming.
 
+*/
 
 **RTL LOGIC FOR FLIPFLOPS**
-![image](https://github.com/user-attachments/assets/a8abf064-3dca-42c1-be2f-ab38bb81dc84)
-**TIMING DIGRAMS FOR FLIP FLOPS**
-![image](https://github.com/user-attachments/assets/790c2885-3731-4777-abe2-d6a9a0fc3eae)
-**RESULTS**
-The SR flip-flop implemented in Verilog has been successfully completed.
 
+![Screenshot 2025-04-30 105205](https://github.com/user-attachments/assets/4a41d230-b942-449f-9915-033a96f19eed)
+
+
+**TIMING DIGRAMS FOR FLIP FLOPS**
+
+![Screenshot 2025-04-30 105537](https://github.com/user-attachments/assets/f97de598-638c-4cc5-8198-be7a5ffe9d31)
+
+
+**RESULTS**
+
+
+SR flipflop using verilog and validating their functionality using their functional tables are verified
