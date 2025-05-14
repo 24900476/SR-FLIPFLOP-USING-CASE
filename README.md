@@ -1,8 +1,6 @@
 # SR-FLIPFLOP-USING-CASE
-```
-NAME: KABIRA A
-REG NO: 212224040146
-```
+# NAME : KABIRA A
+# REG NO: 212224040146
 
 **AIM:**
 
@@ -48,6 +46,8 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 
 ![image](https://github.com/user-attachments/assets/e0048324-c466-4d1f-b170-475b5cd74b68)
 
+Developed by:Priyadharshini.R
+RegisterNumber:24900285
 
 
 **RTL LOGIC FOR FLIPFLOPS**
